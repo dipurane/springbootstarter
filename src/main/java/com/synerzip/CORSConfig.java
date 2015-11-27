@@ -14,12 +14,12 @@ public class CORSConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
-        http.requestMatchers().antMatchers(HttpMethod.OPTIONS, "/oauth/token","/apis/**")
+     /*   http.requestMatchers().antMatchers(HttpMethod.OPTIONS, "/oauth/token","/apis/**")
             .and()
                 .csrf().disable()
             .authorizeRequests().anyRequest().permitAll()
             .and()
-                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);*/
 
     }
 }
